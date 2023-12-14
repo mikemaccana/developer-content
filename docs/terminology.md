@@ -68,7 +68,7 @@ a block chain.
 ## BPF loader
 
 The Solana program that owns and loads
-[BPF](/docs/programs/faq.md#berkeley-packet-filter-bpf) smart contract programs,
+[BPF](/docs/programs/faq.md#berkeley-packet-filter-bpf) [onchain programs](#onchain-program),
 allowing the program to interface with the runtime.
 
 ## client
@@ -119,7 +119,7 @@ See [vote credit](#vote-credit).
 
 ## cross-program invocation (CPI)
 
-A call from one smart contract program to another. For more information, see
+A call from one onchain program to another. For more information, see
 [calling between programs](/docs/core/cpi.md).
 
 ## data plane
@@ -283,6 +283,11 @@ The number of [validators](#validator) participating in a [cluster](#cluster).
 ## onchain program
 
 A program on a blockchain that can read and modify accounts over which it has control.
+Onchain programs interpret the [instructions](#instruction) sent inside
+of each [transaction](#transaction) on the Solana blockchain. 
+
+Onchain programs are often referred to as "[_smart contracts_](/docs/core/programs.md)" on other
+blockchains.
 
 ## PoH
 
@@ -301,10 +306,7 @@ The private key of a [keypair](#keypair).
 
 ## program
 
-The executable code that interprets the [instructions](#instruction) sent inside
-of each [transaction](#transaction) on the Solana. These programs are often
-referred to as "[_smart contracts_](/docs/core/programs.md)" on other
-blockchains.
+See [onchain program](#onchain-program).
 
 ## program derived account (PDA)
 
@@ -368,7 +370,7 @@ execution.
 
 ## Sealevel
 
-Solana's parallel smart contracts run-time.
+Solana's parallel [onchain program](#onchain-program) run-time.
 
 ## shred
 
