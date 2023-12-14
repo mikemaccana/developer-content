@@ -303,8 +303,8 @@ The private key of a [keypair](#keypair).
 
 The executable code that interprets the [instructions](#instruction) sent inside
 of each [transaction](#transaction) on the Solana. These programs are often
-referred to as "[_smart contracts_](/docs/core/programs.md)" on other
-blockchains.
+referred to as "[_smart contracts_](/docs/core/programs.md)" 
+on other blockchains.
 
 ## program derived account (PDA)
 
